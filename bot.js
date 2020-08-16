@@ -31,16 +31,17 @@ const ajudaEmbed = new Discord.MessageEmbed()
         { name: '$subnin10dista', value: 'Mostra quantos inscritos o canal Nin10dista tem'},
         { name: '$subbrisolo', value: 'Mostra quantos inscritos o canal Brisolo tem'},
         { name: '$subplaysp3', value: 'Mostra quantos inscritos o canal Play Sp3 tem'},
-        { name: '$subgafuei', value: 'Mostra quantos inscritos o canal Gafuei Omega tem'}
+        { name: '$subgafuei', value: 'Mostra quantos inscritos o canal Gafuei Omega tem'},
+        { name: '$subdark', value: 'Mostra quantos inscritos o DarkHuela tem'}
     )
 
     const patchEmbed = new Discord.MessageEmbed()
     .setColor('#0099ff')
     .setTitle('Patch Notes')
-    .setDescription('As patch notes da atualização 1.1')
+    .setDescription('As patch notes da atualização 1.1.1')
     .setFooter('| Brisolo bot | Aceitamos ideias, caso tiver envie para Brisolo#8522.| Desde 1/7/2020 ', 'https://lh3.googleusercontent.com/WhSNW8wZJ7jvaVUBrTiAJ_b4YOuVj6aTHwAky_YTeeJTrAX7H3p9Q4Ns9CVDC9-OixUKOQ=s85')
     .addFields(
-      { name: '$sub<nome entre quatro canais> ', value: 'Mostra os inscritos desde a atualização. é editado a cada mês. Canais que funcionam são: Gafuei Omega<$subgafuei>, Play Sp3<$subplaysp3>, Brisolo<$subbrisolo> e Nin10dista<$subnin10dista>.'}
+      { name: '$sub<nome entre quatro canais> ', value: 'Mostra os inscritos desde a atualização. é editado a cada mês. Canais que funcionam são: Gafuei Omega<$subgafuei>, Play Sp3<$subplaysp3>, Brisolo<$subbrisolo>, DarkHuela<$subdark> e Nin10dista<$subnin10dista>.'}
     )
 
 
@@ -105,6 +106,7 @@ var nin10dista = 315;
 var brisolo = 64;
 var playsp3 = 222;
 var gafuei = 228;
+var dark = 117;
 
 // Nin10dista
 client.on('message', msg => {
@@ -131,6 +133,13 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === '$subgafuei'){
       msg.reply(`Do dia 16/07/2020 O canal Gafuei Omega está com ${gafuei} inscritos`)
+  }
+})
+
+// Darkhuela
+client.on('message', msg => {
+  if (msg.content === '$subdark'){
+      msg.reply(`Do dia 16/07/2020 O canal DarkHuela está com ${dark} inscritos`)
   }
 })
 
