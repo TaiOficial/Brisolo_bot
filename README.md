@@ -1,5 +1,5 @@
-# Brisolo_bot
+# Brisolo bot
 O bot de entreterimento do Brisolo (Eu)
 
-
-Tipo não tem nada pra falar... é só o codigo fonte 
+O prefixo desse bot é b!. caso queira convidar para seu server use esse link:
+https://discord.com/api/oauth2/authorize?client_id=739288801951744031&permissions=8&scope=bot
